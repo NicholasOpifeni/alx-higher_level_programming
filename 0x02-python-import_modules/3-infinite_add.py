@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    sum_arg = 0
-    for i in sys.argv[1:]:
-        sum_arg += int(i)
-        print("{:d}".format(sum_arg))
+    argv = sys.argv[1:]
+    argv_count = len(argv)
+    index = 1
+    res = 0
+    while index <= argv_count:
+        res += int(sys.argv[index])
+        index += 1
+        print("{:d}".format(res))
