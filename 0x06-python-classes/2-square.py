@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 0-square.py by Ehoneah Obed
+# 0-square.py by Nicholas Opifeni
 """A module that defines a square """
 
 
@@ -20,4 +20,4 @@ class Square:
         if size < 0:
             raise ValueError('size must be >= 0')
 
-        self.__size = size 
+        self.__size = size
